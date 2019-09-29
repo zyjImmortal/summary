@@ -1,6 +1,6 @@
 ## 异常处理器的作用
 ## 实现
-```
+```python
     @app.errorhandler(Exception)
     def handler(e):
         if isinstance(e, APIException):

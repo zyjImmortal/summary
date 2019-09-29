@@ -6,6 +6,9 @@
             * [开始](python/web/flask/flask.md)
             * [自定义全局异常处理器](python/web/flask/error_handler.md)
         * django
+        * 实战项目
+            * 博客
+                * 项目初始化
     * 测试工具
 * Vue
     * 基础
