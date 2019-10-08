@@ -1,0 +1,15 @@
+* 面向对象编程
+* 进程
+* 线程
+* 协程
+* socket编程
+* lambda
+* 元组列表range
+* 字符串拆分，单引号、双引号、三引号
+* 可变参数
+* pass语句
+* re模块中search和match的区别
+* fastcgi和wsgi的区别
+* 文件操作
+* 内存管理
+* items和iteriterms的区别

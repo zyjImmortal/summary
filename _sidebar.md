@@ -1,10 +1,3 @@
-<!--
- * @Description: In User Settings Edit
- * @Author: your name
- * @Date: 2019-09-14 11:17:42
- * @LastEditTime: 2019-09-14 11:19:36
- * @LastEditors: Please set LastEditors
- -->
 * Python
     * 基础知识
         * [数据类型](python/base/datatype.md)
@@ -28,7 +21,8 @@
         * [分支相关](git/branch.md)
 * 测试
     * Api测试
-        * [接口自动化测试框架](test/api/api_auto_test.md)
+        * [RestaAssured](test/api/tools/restassured.md)
+        * [Spring](test/api/tools/spring.md)
     * UI测试
         * [UI自动化测试框架](test/ui/ui_auto_test.md)
     * 性能测试
