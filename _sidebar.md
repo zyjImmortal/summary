@@ -6,9 +6,17 @@
             * [开始](python/web/flask/flask.md)
             * [自定义全局异常处理器](python/web/flask/error_handler.md)
         * django
+            * [基础知识](python/web/django/base.md)
+            * [错误记录](python/web/django/error.md)
+            * [JWT认证](python/web/django/jwt.md)
+            * [REST支持](python/web/django/rest.md)
+            * [drf序列化器](python/web/django/serializer.md)
         * 实战项目
             * 博客
-                * 项目初始化
+                * [项目需求分析](python/web/实战项目/博客/项目需求分析.md)
+                * [项目结构](python/web/实战项目/博客/项目结构.md)
+                * [表结构设计](python/web/实战项目/博客/表结构设计.md)
+                * [model模型类设计](python/web/实战项目/博客/model设计.md)
     * 测试工具
 * Vue
     * 基础
