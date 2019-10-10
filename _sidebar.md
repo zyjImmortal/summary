@@ -35,3 +35,18 @@
         * [UI自动化测试框架](test/ui/ui_auto_test.md)
     * 性能测试
     * 移动专项测试
+
+* 算法
+  * [排序算法](al/sort.md)
+
+* 面试
+
+  * [python](python/interviews/questions.md)
+
+  
+
+* 最佳实践
+
+  * [接口测试java中最佳实践](Best-practice/api_test_in_java.md)
+
+    
