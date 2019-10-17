@@ -1,32 +1,18 @@
 * Python
     * 基础知识
-        * [数据类型](python/base/datatype.md)
-    * web框架
-        * flask
-            * [开始](python/web/flask/flask.md)
-            * [自定义全局异常处理器](python/web/flask/error_handler.md)
-        * django
-            * [基础知识](python/web/django/base.md)
-            * [错误记录](python/web/django/error.md)
-            * [JWT认证](python/web/django/jwt.md)
-            * [REST支持](python/web/django/rest.md)
-            * [drf序列化器](python/web/django/serializer.md)
-        * 实战项目
-            * 博客
-                * [项目需求分析](python/web/实战项目/博客/项目需求分析.md)
-                * [项目结构](python/web/实战项目/博客/项目结构.md)
-                * [表结构设计](python/web/实战项目/博客/表结构设计.md)
-                * [model模型类设计](python/web/实战项目/博客/model设计.md)
-    * 测试工具
+    
 * Vue
     * 基础
     * 组件库
+    
 * Java
     * 基础
     * 测试工具
+    
 * Git
     * 命令
         * [分支相关](git/branch.md)
+    
 * 测试
     * Api测试
         * [RestaAssured](test/api/tools/restassured.md)
@@ -36,9 +22,11 @@
     * 性能测试
     * 移动专项测试
 
-* 算法
-  * [排序算法](al/sort.md)
-
+* 算法与数据结构
+  
+* [算法](al/al/sort.md)
+  * [数据结构](al/interviews/data_structure.md)
+  
 * 面试
 
   * [python](python/interviews/questions.md)
