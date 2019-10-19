@@ -1,7 +1,12 @@
 * Python
     * 基础知识
     
+* Linux
+    
+    * [常用命令](linux/commander.md)
+    
 * Vue
+    
     * 基础
     * 组件库
     
@@ -9,7 +14,12 @@
     * 基础
     * 测试工具
     
+* Docker
+    
+    * [docker命令](docker/docker_command.md)
+    
 * Git
+    
     * 命令
         * [分支相关](git/branch.md)
     
@@ -24,8 +34,10 @@
 
 * 算法与数据结构
   
-* [算法](al/al/sort.md)
-  * [数据结构](al/interviews/data_structure.md)
+- [算法](al/al/sort.md)
+  
+  - [数据结构](al/interviews/data_structure.md)
+  - [leetcode](al/leetcode/string.md)
   
 * 面试
 
