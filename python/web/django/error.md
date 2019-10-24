@@ -1,10 +1,3 @@
-<!--
- * @Description: In User Settings Edit
- * @Author: your name
- * @Date: 2019-09-14 15:51:04
- * @LastEditTime: 2019-09-14 16:01:40
- * @LastEditors: Please set LastEditors
- -->
 ### `ImproperlyConfigured: mysqlclient 1.3.13 or newer is required`
 
 ##### 问题背景

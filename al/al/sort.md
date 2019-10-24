@@ -61,7 +61,7 @@ def bubble_sort(sequence):
             break
 ``````
 
-##### 选择排序
+#### 选择排序
 
 和插入排序一样，也是划分为两个区间排序的和未排序的，区别是，选择排序每次从未排序区间取出最小的元素放入已排序区间
 
@@ -99,5 +99,84 @@ def select_sort(sequence):
 
   - 选择排序和冒泡排序都要进行元素交换，而插入排序排序只需赋值一次即可，从这点上来说，插入排序的性能会更好一点
 
+#### 归并排序
+
+- 基本思想
+
+核心是<font color=red>分治</font>，就是把一个复杂的问题分成两个或多个相同或相似的子问题，然后把子问题分成更小的子问题，直到子问题可以简单的直接求解，最原问题的解就是子问题解的合并。归并排序将分治的思想体现得淋漓尽致。
+
+- 实现
+
+一开始先把数组从中间划分成两个子数组，一直递归地把子数组划分成更小的子数组，直到子数组里面只有一个元素，才开始排序。
+
+ 排序的方法就是按照大小顺序合并两个元素，接着依次按照递归的返回顺序，不断地合并排好序的子数组，直到最后把整个数组的顺序排好
+
+- 代码示例
+
+``````python
+def merge_sort(array):
+    if len(array) == 1:
+        return array
+    mid = len(array) // 2
+    left = merge_sort(array[:mid])
+    right = merge_sort(array[mid:])
+    return merge(left, right)
+def merge(left, right):
+    result = []
+    while len(left) > 0 and len(right) > 0:
+        if left[0] <= right[0]:
+            result.append(left.pop(0))
+        else:
+            result.append(right.pop(0))
+    result.extend(left)
+    result.extend(right)
+    return result
+``````
+
+``````java
+public class MergeQuickSort {
+
+    public static void mergeSort(int[] nums) {
+        mergeSort(nums, 0, nums.length - 1);
+    }
+
+    public static void mergeSort(int[] nums, int p, int r) {
+        if (p >= r) {
+            return;
+        }
+        int mid = p + (p + r) / 2;
+        mergeSort(nums, p, mid);
+        mergeSort(nums, mid + 1, r);
+        merge(nums, p, mid, r);
+    }
+   public static void mergerV2(int[] nums, int p, int mid, int r) {
+        int[] copy = nums.clone();
+        // 定义一个指针表示从什么位置开始修改原来的数组,i 指针表示左半边的起始位置，j 表示右半边的起始位置
+        int k = p, i = p, j = mid + 1;
+        while (k <= r) {
+            if (i > mid) {
+              // 当左边的指针大于mid,说明左边的数据已经遍历完成，把右边的数据放入nums
+                nums[k++] = copy[j++];
+            } else if (j >= r) {
+              // 当右边的指针大于r,说明右边的数据已经遍历完成，把左边的数据放入nums
+                nums[k++] = copy[i++];
+            } else if (nums[j] < copy[i]) {
+                nums[k++] = nums[j++];
+            } else {
+                nums[k++] = nums[i++];
+            }
+        }
+    }
+}
+``````
+
+- 复杂度分析
+  - 空间复杂度
+  - 时间复杂度
+- 稳定性
+
 #### 快速排序
 
+- 基本思想
+- 实现
+- 

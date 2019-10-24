@@ -77,3 +77,12 @@ public class CustomTimestampDeserializer extends JsonDeserializer<DateTime> {
 }
 ``````
 
+在成员变量标记使用自定义的序列化和反序列化器
+
+```java
+@JsonProperty("created_time")
+@JsonSerialize(using = CustomTimestampSerializer.class)
+@JsonDeserialize(using = CustomTimestampDeserializer.class)
+private DateTime createdTime;
+```
+
