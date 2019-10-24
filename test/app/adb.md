@@ -1,0 +1,26 @@
+### adb命令集合
+
+- APP信息
+  - 获取当前界面元素：adb shell dumpsys activity top
+  - 获取任务列表： adb shell dumpsys activity activities
+- APP入口
+  - adb logcat | grep -i displayed 查看当前正在运行的activity
+  - aapt dump badging mobile.apk | grep launchble-activity
+  - apkanalyzer最新版本的sdk提供的工具
+- 启动应用
+  - adb shell am start -W -n com.lanjingren.ivwen/.view.MainActivity
+- Android常用命令
+  - adb Android debug bridge
+  - adb devices 查看连接设备
+  - adb kill-server 关闭adb的后台进程
+  - adb tcpip 让Android脱离usb线的连接方式
+  - Adb connect 链接开启了tcp链接的手机
+  - adb logcat 查看Android运行日志
+  - Adb bugreport 手机日志数据，用于分析，比如电量，在分析手机电量消耗的时候，用此命令收集的日志和batteryhistory工具配合来进行分析
+- adb shell 命令
+  - adb shell 本身就是一个Linux的shell，可以调用Android的内置命令
+  - adb shell dumpsys
+  - adb shell pm 
+  - adb shell am
+  - adb shell ps
+  - adb shell monkey
