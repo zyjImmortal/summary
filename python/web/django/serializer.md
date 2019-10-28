@@ -36,8 +36,6 @@ class CheckImageCodeSerializer(serializers.Serializer):
 
 手机号可以通过路由的正则表达式匹配的时候进行校验，图片验证码存在```redis```中，在进行是否合法校验时，需要从根据手机号```mobile```来查询到，那么就要在```CheckImageCodeSerializer```中获取到手机号，先来看那一下在类视图中如何使用自定义的序列化器，
 
-
-
 ```python
 class SMSCodeView(GenericAPIView):
   # 指定序列化器,serializer_class属性时GenericAPIView的一个类属性
