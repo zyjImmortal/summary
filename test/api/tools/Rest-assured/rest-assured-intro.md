@@ -30,8 +30,7 @@ public static <T> T requestAdvertForGet(String url, Class<T> responseClass, Obje
 在返回数据又float或者double类型进行对比的时候，可能会产生精度问题，尽量使用BigDecimal包装后进行比较，
 
 ``````java
-given().
-        config(RestAssured.config().jsonConfig(jsonConfig().numberReturnType(BIG_DECIMAL))).
+given().     config(RestAssured.config().jsonConfig(jsonConfig().numberReturnType(BIG_DECIMAL))).
 when().
         get("/price").
 then().

@@ -20,11 +20,7 @@ Viewrootimpl 页面绘制
 
 重走activity的生命周期 life cycle 
 
-
-
 #### 优化方向
-
-
 
 #### 启动时间测量
 
@@ -57,9 +53,9 @@ onWindowsFocusChanged只是首帧时间，activity首次绘制时间w
 
 ##### 优势
 
-	* 图形化的展示执行时间，调用栈等
-	* 信息全面、包含所有信息
-	* 可以在代码中埋点，用cpu profile分析
+* 图形化的展示执行时间，调用栈等
+* 信息全面、包含所有信息
+* 可以在代码中埋点，用cpu profile分析
 
 ##### 缺点
 
