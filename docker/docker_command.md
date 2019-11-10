@@ -1,5 +1,11 @@
 ### docker命令
 
+- 启动docker服务
+
+```shell
+service docker start
+```
+
 - 查看所有容器
 
   ```docker ps -l```
@@ -47,7 +53,7 @@
   192.168.65.3
   
   ``````dockerfile
-  docker run -dti --network=host --name storage -e TRACKER_SERVER=192.168.65.3:22122 -v /Users/zhouyajun/workspace/docker-images/fastdfs/storage:/var/fdfs delron/fastdfs storage
+  docker run -dti --network=host --name storage -e TRACKER_SERVER=192.168.65.3:22122 -v /Users/zhouyajun/workspace/docker-images/fastdfs/storage:/var/fdfs delron/fastdfs storage,ip写本机IP
   ``````
   
   
