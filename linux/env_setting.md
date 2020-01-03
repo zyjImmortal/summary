@@ -35,3 +35,45 @@
   # ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
   ``````
 
+* https配置
+
+  * 先从阿里云或者腾讯云获取免费证书，两个文件，上传到服务器上，
+
+  * 然后给服务增加ssl配置
+
+    ```upstream jenkins {
+            server 127.0.0.1:9080;
+    }
+    ```
+
+    server {
+        listen 443 ssl;
+        server_name jenkins.immortalp.com;
+        charset utf-8;
+       ssl_certificate /etc/nginx/ssl/cert.crt;
+      ssl_certificate_key /etc/nginx/ssl/private.key;
+      ssl_session_timeout 5m;
+      ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照这个协议配置
+      ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;#按照这个套件配置
+      ssl_prefer_server_ciphers on;
+
+    ```
+
+      # rewrite ^(.*) https://$host$1 permanent;
+        location / {
+           proxy_pass http://jenkins;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header Host $http_host;
+          proxy_set_header X-Forwarded-Proto https;
+          proxy_redirect off;
+          proxy_connect_timeout  240;
+
+          proxy_send_timeout   240;
+          proxy_read_timeout   240;
+        }
+    }
+    server{
+      listen 80;
+      server_name jenkins.immortalp.com;
+      rewrite ^(.*) https://$host$1 permanent;
+    }
