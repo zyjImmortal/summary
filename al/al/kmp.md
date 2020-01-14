@@ -1,0 +1,3 @@
+kmp算法也是一种字符串匹配算法，但是他和BM算法不同的是，从前往后开始匹配。共同点是都是想找出滑动最大位数的规律。
+
+假设现在有两个字符串，一个是abaabaabbabaaabaabbabaab,起个名叫m，另一个abaabbabaab叫p，
