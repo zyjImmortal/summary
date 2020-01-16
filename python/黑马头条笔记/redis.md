@@ -60,7 +60,5 @@ info Replication 查看当前Redis的信息
 - automatic failover 故障转移，自动故障转移，自动将slave提升成master，重启master，正常后，自动降级变为slave
 - configured provider配置提供者，直接配置哨兵地址，客户端直接请求哨兵地址，会自动请求到master，
 
-
-
-集群
+  
 
