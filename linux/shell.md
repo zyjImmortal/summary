@@ -19,15 +19,11 @@ enkins安装好后，会自动创建一个jenkins用户。jenkins在构建工程
 
 1.将jenkins账号分别加入到root组中
 
-
-
 ```undefined
 gpasswd -a root jenkins
 ```
 
 2.修改/etc/sysconfig/jenkins文件中，
-
-
 
 ```bash
 # user id to be invoked as (otherwise will run as root; not wise!)
@@ -39,8 +35,6 @@ JENKINS_GROUP="root"
 
 3.重启Jenkins
 
-
-
 ```undefined
 service Jenkins restart
 ```
@@ -48,17 +42,33 @@ service Jenkins restart
 4.验证
  在Jenkins中的shell脚本中执行命令
 
-
-
 ```undefined
 groups jenkins
 ```
 
 查看jenkins是在哪个用户组，显示的是`root`。
 
+passwd 修改用户密码
 
+Useradd 添加用户
 
-作者：louhangfei
-链接：https://www.jianshu.com/p/3c79fd73a923
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+* 文件目录
+
+```
+drwx------    5 zhouyajun  staff        160  8 23  2018 .bash_sessions
+-rw-r--r--    1 zhouyajun  staff        118  6  4  2019 .bashrc
+drwxr-xr-x    5 zhouyajun  staff        160  6  4  2019 .bitrise
+drwxr-xr-x    3 zhouyajun  staff         96  1 16  2019 .cache
+drwx------    8 zhouyajun  staff        256 12 25 15:36 .config
+drwx------    3 zhouyajun  staff         96  9 13  2018 .cups
+```
+
+第一列第一个字符d表示的是目录，-横线表示的是普通文件
+
+剩下的9个字符是权限位，每三个为一组，每一组 rwx 表示“读（read）”“写（write）”“执行（execute）”。
+
+三个组分别表示文件所属的用户权限、文件所属的组权限以及其他用户的权限
+
+第二列字段是硬链接（hard link）数目
+
+第三列是所属用户，第四列是所属组。第五列是文件的大小，第六个字段是文件被修改的日期，最后是文件名

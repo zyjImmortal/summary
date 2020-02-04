@@ -94,3 +94,11 @@ def getRowV3(self, rowIndex):
             r[j] = r[j] + r[j + 1]
     return r
 ```
+
+### 返回滑动窗口最大值
+
+[leetcode题目链接](https://leetcode-cn.com/problems/sliding-window-maximum/)
+
+给定一个数组 *nums*，有一个大小为 *k* 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 *k* 个数字。滑动窗口每次只向右移动一位,返回滑动窗口的最大值。
+
+每次要找最大值，可以用一个大顶堆来实现这个窗口，大顶堆的大小为k，堆顶元素就位最大值，每次滑动需要添加新元素并删除不在窗口范围内的元素。
