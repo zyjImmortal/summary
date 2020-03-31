@@ -1,0 +1,3 @@
+生命周期的各个阶段
+
+forkmode就是指明是否要为一个测试创建一个进程，还是所有测试都在同一个进程中完成。取值就是never once always pretest
