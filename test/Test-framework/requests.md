@@ -1,0 +1,1 @@
+requests库是一个python的第三方 http库，是基于python内置的urllib3开发，提供了纯天然无污染的发送http请求的各种方式，具有连接池、URL处理、cookies、session、ssl认证、身份认证、代理、文件上传等各种功能特性。
