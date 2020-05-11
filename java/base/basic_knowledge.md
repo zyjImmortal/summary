@@ -36,3 +36,5 @@ public class StringDemo {
 #### 参数传递-值传递
 
 方法参数的传递其实传递的是一个拷贝，却别在于拷贝的是值还是引用，如果是值，原值是不会发生改变的，如果是引用，方法中对对象的操作，会引起原对象的改变
+
+Comparator<T> & Serializable 是支持两个接口，一个是 Comparator<T>，另一个是Serializable
