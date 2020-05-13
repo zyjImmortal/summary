@@ -20,3 +20,25 @@ Lombok 是一个可以通过简单的注解形式来帮助我们简化消除一�
 
 #### 基础注解
 
+`@Getter`给类增加get方法
+
+`@Setter`给类增加set方法
+
+`@Builder`给类增加构建者模式
+
+`@AllArgsConstructor`给类增加全参构造方法
+
+`@NoArgsConstructor`给类增加无参数构造方法
+
+`@RequiredArgsConstructor`按照必填属性增加构造方法
+
+`@NonNull`变量值不能为空
+
+这里只简单列一下常用注解的含义，具体的使用方式在参数校验的实例中体现。
+
+#### 实战
+
+
+
+### 参数校验
+
