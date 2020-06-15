@@ -22,7 +22,7 @@
 
 下面我们先给出mysql的架构示意图，然后再逐步进行解释。
 
-![image-20200608231346620](/Users/zhouyajun/Library/Application%20Support/typora-user-images/image-20200608231346620.png)
+![image-20200609100655530](/Users/zhouyajun/Library/Application%20Support/typora-user-images/image-20200609100655530.png)
 
 总来来说MySQL可以分为两层分别是server层和存储引擎层
 
